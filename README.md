@@ -35,7 +35,7 @@ to do same work.
   (you must create and use own username, password; use ***SETUP*** instructions.)
 
 
-+ Sorting and formatting by ***flake8 / black / isort*** 
-  were applied to improve the code quality. If you need install it try:
++ Sorting and formatting by ***black*** 
+  to improve the code quality. If you need install it try:
   
     >#### pip install -r dev.txt
