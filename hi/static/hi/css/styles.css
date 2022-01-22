@@ -205,9 +205,17 @@ h1.message{
     text-align: center;
 }
 .visitors {
-
+    margin: 0 0 0 30%;
 }
 
+.list{
+
+    position: fixed;
+    left: 5%;
+    top: 40%;
+    color: #024852;
+
+}
 
 h1 span {
     color: #fff;
@@ -217,3 +225,9 @@ h1 span {
     background: none;
     padding: 10px;
     }
+
+@media screen and (max-width: 1260px) {
+	.list {
+		display: none;
+	}
+}
