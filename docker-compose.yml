@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  user_reg_web:
+    build: .
+    command: python /usr/django/user-registar/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/usr/django/user-registar
+    ports:
+      - 8000:8000
+
+
