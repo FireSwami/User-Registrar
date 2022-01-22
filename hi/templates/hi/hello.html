@@ -1,0 +1,15 @@
+{% extends 'hi/base.html' %}
+
+{% block content %}
+
+<div class="fire">
+<h1 class="message"> <span> Добро пожаловать, {{ user_data.first_name  }} {{ user_data.last_name }} ! </span></h1>
+</div>
+ <tr>
+        <td valign=top>
+            <div id="footer">
+                <p>&copy; 2022 Регистрация мероприятий (с)</p>
+            </div>
+        </td>
+    </tr>
+{% endblock  %}

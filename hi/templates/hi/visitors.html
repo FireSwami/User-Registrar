@@ -1,0 +1,16 @@
+{% extends 'hi/base.html' %}
+
+{% block content %}
+
+<h1>{{ title }}:</h1>
+<ul class="visitors">
+    {% for v in visitors %}
+<li>
+    <h2>{{ v.last_name }}, {{v.first_name}}  ({{ v.phone_number}})</h2>
+    <p>{{ v.time_registration }}</p>
+    <hr>
+</li>
+    {% endfor %}
+</ul>
+{% endblock  %}
+

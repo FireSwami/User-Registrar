@@ -1,0 +1,41 @@
+{% extends 'hi/base.html' %}
+
+{% block content %}
+
+
+
+<form action="{% url 'home' %}" method="post">
+    {% csrf_token %}
+
+   {% for f in form %}
+    <p class="form"><label class="form-text" for="{{ f.id_for_label }}">{{f.label}}: </label>{{ f }}</p>
+
+    {% endfor %}
+
+
+
+
+    <div class="container">
+    <div class="center">
+      <button type="submit" class="btn">
+        <svg width="300px" height="60px" viewBox="0 0 300 60" class="border">
+          <polyline points="299,1 299,59 1,59 1,1 299,1" class="bg-line" />
+          <polyline points="299,1 299,59 1,59 1,1 299,1" class="hl-line" />
+        </svg>
+        <span>Регистрация</span>
+      </button>
+    </div>
+  </div>
+</form>
+
+
+ <tr>
+        <td valign=top>
+            <div id="footer">
+                <p>&copy; 2022 Регистрация мероприятий (с)</p>
+            </div>
+        </td>
+    </tr>
+
+{% endblock  %}
+
