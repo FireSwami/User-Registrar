@@ -2,8 +2,12 @@ version: '3.7'
 
 services:
   user_reg_web:
-    build: .
-    command: python /usr/django/user-registar/manage.py runserver 0.0.0.0:8000
+    container_name: user_registar
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    command: bash -c "python /usr/django/user-registar/manage.py migrate --noinput &&
+             python /usr/django/user-registar/manage.py runserver 0.0.0.0:8000"
     volumes:
       - .:/usr/django/user-registar
     ports:

@@ -134,7 +134,7 @@ body, html {
   height: 100px;
   position: absolute;
   left: 47%;
-  top: 55%;
+  top: 450;
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
