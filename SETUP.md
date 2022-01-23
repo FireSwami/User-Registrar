@@ -30,11 +30,11 @@
     >#### python manage.py runserver
 
 8. If you need start server in docker container,
-   create container with docker and run it: 
-    
-    >#### docker build -t user-reg .
+   create container with docker and run it:
     
     >#### docker-compose build
+   
+    >#### docker compose exec web python manage.py migrate --noinput
 
     >#### docker-compose up
    
