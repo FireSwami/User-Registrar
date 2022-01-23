@@ -29,8 +29,12 @@
 
     >#### python manage.py runserver
 
-8. If you need start server in docker container(you mast have password keies ***.env*** file 
-   in sources root directory): 
+8. If you need start server in docker container,
+   create container with docker and run it: 
+    
+    >#### docker build -t user-reg .
+    
+    >#### docker-compose build
 
     >#### docker-compose up
    
