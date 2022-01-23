@@ -29,6 +29,11 @@
 
     >#### python manage.py runserver
 
+8. If you need start server in docker container(you mast have password keies ***.env*** file 
+   in sources root directory): 
+
+    >#### docker-compose up
+   
 9. Open **[localhost](http://127.0.0.1:8000/)** 
     (for default) and start to visitor's registration.
      - *Also you can use **[Django Admin Panel](http://127.0.0.1:8000/admin/)** 
